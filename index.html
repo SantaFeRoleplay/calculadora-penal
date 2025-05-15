@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora Penal - Santa Fé</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Santa Fé" class="logo" />
+    <h1>Calculadora Penal - Santa Fé</h1>
+  </header>
+
+  <form id="form-crimes">
+    <div class="crime">
+      <input type="checkbox" name="crime" value="20" id="homicidio" />
+      <label for="homicidio">Homicídio (20 anos)</label>
+    </div>
+    <div class="crime">
+      <input type="checkbox" name="crime" value="10" id="tentativa" />
+      <label for="tentativa">Tentativa de Homicídio (10 anos)</label>
+    </div>
+    <div class="crime">
+      <input type="checkbox" name="crime" value="5" id="lesao" />
+      <label for="lesao">Lesão Corporal (5 anos)</label>
+    </div>
+    <div class="crime">
+      <input type="checkbox" name="crime" value="7" id="sequestro" />
+      <label for="sequestro">Sequestro (7 anos)</label>
+    </div>
+    <div class="crime">
+      <input type="checkbox" name="crime" value="15" id="trafico" />
+      <label for="trafico">Tráfico de Drogas (15 anos)</label>
+    </div>
+
+    <button type="button" onclick="calcularPena()">Calcular Pena Total</button>
+  </form>
+
+  <div class="resultado" id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
